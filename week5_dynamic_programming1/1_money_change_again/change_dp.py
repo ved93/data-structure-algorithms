@@ -17,6 +17,11 @@ import sys
 
 # print(minCoins[money])
 
+#logic: subtract each denominations from the money and take minimum of it. This way you will know that
+# you only need to add that denom to reach the required money. i.e. for 9 
+# , given 1,3,4 denom take min of 8,6,5 and then add one coin of that denom
+
+
 def get_change(m):
     #write your code here
     coins = [0]*(m+1)
